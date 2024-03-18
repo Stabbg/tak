@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+body {
+
+background-color:gray;
+margin: 0;
+padding:  0;
+
+}
+
+.zegar{
+
+    color:#fff;
+    font-family:'indie flower','cursive';
+    font-size:24px;
+}

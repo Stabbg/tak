@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styll.css" type="text/css">
+</head>
+<body onload="losuj()">
+
+    <div id="container">
+
+<h1>Tabliczka mnożenia do 100     <a href="index.html" style="float:right;">Powrót do strony głównej</a></h1>
+    <hr>
+<h2>Ile to jest <div id="a"></div> do potęgi 2?</h2>
+
+<div id="zad">
+
+
+Odpowiedz <input type="number" id="d"> 
+<button onclick="sprawdz()">Sprawdz</button> <div id="e"></div>
+
+
+<button onclick="losuj()">Kolejne pytanie</button>
+
+
+
+
+</div>
+
+</div>
+
+
+<Script>
+
+function losuj(){
+
+
+    do{
+        a=Math.floor(Math.random()*10+1);
+    }
+    while(Math.pow(a,2)>100);
+    
+    
+    document.getElementById("a").innerHTML=a;
+    document.getElementById("b").innerHTML=b;
+    document.getElementById("d").value="";
+    document.getElementById("e").innerHTML="";
+    }
+    
+    
+    function sprawdz(){
+    d=document.getElementById("d").value;
+    if(d==Math.pow(a,2)){
+        document.getElementById("e").innerHTML="Dobrze <img src='good.jpg'>";
+    }
+    else{
+        document.getElementById("e").innerHTML="Źle <img src='bad.jpg'>";
+    }
+    
+    
+    
+    }
+    
+</Script>
+
+    
+</body>
+</html>

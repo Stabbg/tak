@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styll.css" type="text/css">
+    <link rel="stylesheet" href="zss.css" type="text/css">
+</head>
+<body onload="liczenie()">
+
+    <div id="container">
+
+<h1>Zadania matematyczne dla klas 4 <img src="gif2.gif" id="aaa"></h1>
+    <hr>
+<h2>Lista ćwiczeń do wyboru</h2>
+
+<div id="zad">
+<ul>
+
+<li><a href="zad1.html">Tabliczka mnożenia do 100</a></li><br>
+<li><a href="zad2.html">Tabliczka dzielenia do 100</a></li><Br>
+<li><a href="zad3.html">Mnożenie przez 10 100 1000</a></li><br>
+<li><a href="zad4.html">Dzielnie z resztą</a></li><br>
+<li><a href="zad5.html">Potęgi drugiego stopnia do 100</a></li><br>
+
+
+
+
+
+
+
+
+</ul>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+<footer >
+    
+
+
+    Stronę wykonał Bartłomiej Paszkot 	&#169;
+
+    <div id="timer" class="zegar">
+        <h1 style>ZEGAR</h1>
+
+
+<script>
+
+        function liczenie(){
+
+            var dzisiaj = new Date();
+            
+            var dzien = dzisiaj.getDate();
+            var miesiac = dzisiaj.getMonth();
+            var rok = dzisiaj.getFullYear();
+            
+            var godzina = dzisiaj.getHours();
+            if(godzina<10)godzina = "0"+godzina;
+            var minuta = dzisiaj.getMinutes();
+            if(minuta<10)minuta = "0"+minuta;
+            var sekunda = dzisiaj.getSeconds();
+            
+            if(sekunda<10)sekunda = "0"+sekunda;
+            
+            document.getElementById('timer').innerHTML= dzien+" / "+miesiac+" / "+rok+" -- "+godzina+" / "+minuta+" / "+sekunda;
+            
+            
+            
+            setTimeout("liczenie()", 1000);
+            
+            }
+
+        </script>
+</footer>
+
+
+
+    
+</body>
+</html>

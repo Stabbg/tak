@@ -1,0 +1,37 @@
+body{
+    background-image:url(bg.jpg);
+}
+
+
+ul{
+
+
+    list-style-image: url(pointer.png);
+}
+
+
+a{
+    color:white;
+}
+
+
+
+#zad{
+    background-color:rgb(97, 53, 255);
+    width:500px;
+}
+
+#container{
+    padding:25px;
+    background-color:rgba(97, 53, 255,0.8);
+    color:white;
+    border:3px black solid;
+    margin-left:50px;
+    margin-right:50px;
+    height:700px;
+}
+
+
+hr{
+    margin-left:0px;
+}
